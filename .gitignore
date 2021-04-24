@@ -13,3 +13,16 @@
 # Swap
 .swp
 .swo
+#
+recentf
+tramp 
+history
+%backup%~
+
+#Dirs
+
+/elpa 
+/eshell
+/straight 
+/eln-cache
+/auto-save-list
