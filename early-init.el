@@ -1,7 +1,7 @@
 ;;; early-init.el --- earliest birds               -*- no-byte-compile: t lexical-binding: t -*-
 
 
-;; Disable GC until gcmh-mode is loaded
+;; Suppres GC until gcmh-mode is loaded
 (setq gc-cons-threshold most-positive-fixnum)
 
 ;; Inhibit resizing frame greatly improving performace
