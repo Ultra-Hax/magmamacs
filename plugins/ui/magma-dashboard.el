@@ -1,5 +1,8 @@
 ;;; magma-dashboard.el -*- lexical-binding: t -*-
 
+(use-package page-break-lines
+  :defer t)
+
 (use-package dashboard
   :commands (dashboard-setup-startup-hook)
   :defer t
