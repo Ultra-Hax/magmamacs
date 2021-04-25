@@ -12,7 +12,7 @@
                         (projects . 5)
                         (registers . 5)))
   (setq dashboard-banner-logo-title "Welcome to Magmamacs")
-  (setq dashboard-startup-banner "~/Downloads/emacs-e.svg")
+  (setq dashboard-startup-banner "~/.emacs.d/emacs-e.svg")
   (setq dashboard-center-content t)
   (setq dashboard-set-heading-icons t)
   (setq dashboard-set-file-icons t)
