@@ -1,6 +1,7 @@
 ;;; magma-solaire-mode.el -*- lexical-binding: t -*-
 
 (use-package solaire-mode
+  :defer t
   ;; Ensure solaire-mode is running in all solaire-mode buffers
   :hook (change-major-mode . turn-on-solaire-mode)
   ;; ...if you use auto-revert-mode, this prevents solaire-mode from turning

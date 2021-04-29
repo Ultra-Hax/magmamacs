@@ -19,6 +19,9 @@ tramp
 history
 %backup%~
 
+#Custom
+custom.el
+
 #Dirs
 
 /elpa 

@@ -15,14 +15,24 @@
    	        (eval-print-last-sexp)))
       (load bootstrap-file nil 'nomessage))
 
+;; Prevent straight from checking for modifications which decreases startup time.
 (setq straight-check-for-modifications nil)
-(straight-use-package 'use-package)
-(setq straight-use-package-by-default t)
+
+;; Make sure that straight is caching autoloads
+(setq straight-cache-autoloads t)
+
+;; Shallow clone to decrease disk size
+(setq straight-vc-git-default-clone-depth 1)
+
+(eval-when-compile
+  (straight-use-package 'use-package)
+  (setq straight-use-package-by-default t))
+
 ;; Use essential packages 
 
 
 (use-package dash
-	:defer t)
+  :defer t)
 
 ;; Needed for many packages
 (require 'subr-x)
@@ -39,7 +49,7 @@
 ;;Slow down the UI being updated to improve performance
 (setq idle-update-delay 1.1)
 
-;; Prevent Emacs from polluting init.el with those pesky custom-set-variables.
+;; Prevent Emacs from polluting init.el with those annoying custom-set-variables.
 (setq custom-file (concat user-emacs-directory "/custom.el"))
 
 ;; Disable scratch buffer

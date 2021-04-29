@@ -9,6 +9,8 @@
 
 ;;(setq load-prefer-newer t)
 
+;; Disable file-name-handler alist.
+(setq file-name-handler-alist nil)
 
 ;; Disable deffered compilation for Emacs native comp since straight.el compiles packages ahead of time.
 (setq comp-deferred-compilation nil)
