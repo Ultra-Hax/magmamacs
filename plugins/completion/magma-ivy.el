@@ -39,10 +39,9 @@
   :init
   (ivy-rich-mode 1))
 (use-package swiper
-  :commands (swiper)
+  :defer t
   :after ivy
   :init 
-  (define-key evil-normal-state-local-map "/" 'swiper) 
   :bind (("C-s" . swiper)
          ("C-r" . swiper)))
 

@@ -1,13 +1,12 @@
 ;;; early-init.el --- earliest birds               -*- no-byte-compile: t lexical-binding: t -*-
 
 
-;; Suppres GC until gcmh-mode is loaded
+;; Suppress GC until gcmh-mode is loaded
 (setq gc-cons-threshold most-positive-fixnum)
 
 ;; Inhibit resizing frame greatly improving performace
 (setq frame-inhibit-implied-resize t)
 
-;;(setq load-prefer-newer t)
 
 ;; Disable file-name-handler alist.
 (setq file-name-handler-alist nil)
