@@ -1,4 +1,4 @@
-;;; early-init.el --- earliest birds               -*- no-byte-compile: t lexical-binding: t -*-
+;;; early-init.el  -*- no-byte-compile: t lexical-binding: t -*-
 
 
 ;; Suppress GC until gcmh-mode is loaded
