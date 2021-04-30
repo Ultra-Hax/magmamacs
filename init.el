@@ -20,12 +20,17 @@
 (require 'magma-dashboard)
 (require 'magma-scheme)
 (require 'magma-org)
+(require 'magma-which-key)
+(require 'magma-ligature)
 ;;(require 'magma-centaur-tabs)
-(load-theme 'doom-solarized-light t)
-
+;;(load-theme 'doom-solarized-dark t)
+;;(load-theme 'doom-one t)
+(load-theme 'doom-moonlight t)
 (add-to-list 'default-frame-alist '(font . "Monoid Nerd Font Mono-10" ))
 (set-face-attribute 'default t :font "Monoid Nerd Font Mono-10" )
 
+;;(add-to-list 'default-frame-alist '(font . "JetBrainsMono Nerd Font Mono"))
+;;(set-face-attribute 'default t :font "JetBrainsMono Nerd Font Mono")
 ;; Local Variables:
 ;; byte-compile-warnings: (not free-vars)
 ;; End:
